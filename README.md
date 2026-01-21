@@ -74,7 +74,7 @@ pip install -r requirements.txt
 ### 2. Эксперименты
 
 ```bash
-#### Запуск экспериментов
+# Запуск экспериментов
 python src/experiments.py
 
 ```
@@ -82,7 +82,7 @@ python src/experiments.py
 ### MLflow UI
 
 ```bash
-#### Отслеживания экспериментов
+# Отслеживания экспериментов
 mlflow ui --port 5000
 ```
 
@@ -102,7 +102,7 @@ uvicorn api.main:app --host 0.0.0.0 --port 8000 --reload
 ### Streamlit UI
 
 ```bash
-### Для удобного тестирования модели через веб-интерфейс:
+# Для удобного тестирования модели через веб-интерфейс:
 streamlit run ui/streamlit_ui.py
 ```
 
