@@ -1,0 +1,5 @@
+outs:
+- md5: 3a40d6d4a1b5f728691633426b4e794a
+  size: 174147533
+  hash: md5
+  path: fasttext_format.txt

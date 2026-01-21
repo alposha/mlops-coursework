@@ -1,0 +1,40 @@
+# configs/train.yaml
+data:
+  path: 'data/processed/cleaned_data.csv'
+  fasttext_file: 'data/processed/fasttext_format.txt'
+
+train:
+  test_size: 0.2
+  random_state: 42
+  save_catboost_model_path: 'models/best_catboost_model.cbm'
+  save_fasttext_model_path: 'models/fasttext_model.bin'
+
+model:
+  fasttext:
+    epoch: 25
+    lr: 0.1
+    word_ngrams: 2
+    bucket: 100000
+
+  random_forest:
+    exp1:
+      n_estimators: 100
+      max_depth: 10
+      min_samples_leaf: 2
+      random_state: 228
+    exp2:
+      n_estimators: 200
+      max_depth: 200
+      min_samples_leaf: 3
+      random_state: 228
+
+  logistic_regression:
+    max_iter: 1500
+    random_state: 228
+
+  catboost:
+    iterations: 300
+    learning_rate: 0.05
+    depth: 6
+    verbose: 50
+    random_state: 228

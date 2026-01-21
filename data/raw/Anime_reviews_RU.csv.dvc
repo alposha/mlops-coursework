@@ -1,0 +1,5 @@
+outs:
+- md5: 47fcdf5aa841a1d30a4a3f514f9dad45
+  size: 179246433
+  hash: md5
+  path: Anime_reviews_RU.csv

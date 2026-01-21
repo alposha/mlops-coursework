@@ -1,0 +1,16 @@
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+fasttext
+catboost
+pymorphy3
+nltk
+tqdm
+mlflow
+dvc
+wordcloud
+streamlit
+fastapi
+uvicorn[standard]
